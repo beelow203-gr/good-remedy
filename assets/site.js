@@ -1,5 +1,5 @@
 (function () {
-  if (!document.querySelector('link[data-gr-operations]')) {
+  if (!document.querySelector('link[href$="/assets/operations.css"], link[data-gr-operations]')) {
     const operationsCss = document.createElement('link');
     operationsCss.rel = 'stylesheet';
     operationsCss.href = '/assets/operations.css';
