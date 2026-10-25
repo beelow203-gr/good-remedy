@@ -1,4 +1,11 @@
 (function () {
+  if (!document.querySelector('link[data-gr-operations]')) {
+    const operationsCss = document.createElement('link');
+    operationsCss.rel = 'stylesheet';
+    operationsCss.href = '/assets/operations.css';
+    operationsCss.setAttribute('data-gr-operations', 'true');
+    document.head.appendChild(operationsCss);
+  }
   const header = document.querySelector('[data-header]');
   const menuButton = document.querySelector('[data-menu-button]');
   const nav = document.querySelector('[data-nav]');
