@@ -4,6 +4,8 @@
   const nav = document.querySelector('[data-nav]');
   const year = document.querySelector('[data-year]');
   const form = document.getElementById('operation-form');
+  const copyButton = document.querySelector('[data-copy-email]');
+  const copyStatus = document.querySelector('[data-copy-status]');
 
   if (year) year.textContent = new Date().getFullYear();
 
@@ -58,6 +60,25 @@
         data.get('problem') || ''
       ];
       window.location.href = 'mailto:hello@grmove.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
+    });
+  }
+
+  if (copyButton) {
+    copyButton.addEventListener('click', function () {
+      const email = 'hello@grmove.com';
+      const done = function () {
+        if (copyStatus) copyStatus.textContent = 'Copied';
+        window.setTimeout(function () {
+          if (copyStatus) copyStatus.textContent = '';
+        }, 2200);
+      };
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(email).then(done).catch(function () {
+          window.prompt('Copy this email address:', email);
+        });
+      } else {
+        window.prompt('Copy this email address:', email);
+      }
     });
   }
 })();
