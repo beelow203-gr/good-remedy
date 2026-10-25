@@ -7,6 +7,12 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://grmove.com/platform/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://grmove.com/transformation-implementation/</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
@@ -16,7 +22,7 @@
     <loc>https://grmove.com/ai-workflow-repair/</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://grmove.com/ai-work-review/</loc>
