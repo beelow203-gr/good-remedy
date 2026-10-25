@@ -1,7 +1,6 @@
 User-agent: *
 Allow: /
 
-# Allow ordinary search indexing while declining major model-training crawlers.
 User-agent: GPTBot
 Disallow: /
 
