@@ -38,7 +38,7 @@
       <a href="/platform/">Platform</a>
       <a href="/#capabilities">Capabilities</a>
       <a href="/transformation-implementation/">Pilot</a>
-      <a href="/#control">Control</a>
+      <a href="/partners/">Partners</a>
       <a href="/about/">Company</a>
       <a class="nav-cta" href="/#contact">Start with one operation</a>
     </nav>
@@ -69,6 +69,21 @@
     </div>
   </div>
   <div class="shell proof-strip" data-reveal><span>Grounded in your business</span><span>Authority stays with your people</span><span>Works across models and tools</span><span>Continuity across change</span></div>
+</section>
+<section class="section entry-section" id="start">
+  <div class="shell">
+    <div class="section-intro" data-reveal>
+      <p class="eyebrow dark-eyebrow">Ways to begin</p>
+      <h2>Already implementing AI or changing an important workflow?</h2>
+      <p>Good Remedy helps make one operation work in practice, from records and responsibilities to exceptions, handoffs, and verifiable results. Start from the work you already have.</p>
+    </div>
+    <div class="offer-grid">
+      <article class="offer-card featured" data-reveal><span class="offer-number">01</span><h3>Managed pilot</h3><p class="offer-price">Scoped and priced after a first conversation</p><p>Put one live operation into use: its purpose, inputs, decisions, exceptions, approvals, and the evidence that it worked.</p><a href="/transformation-implementation/">See the pilot <span aria-hidden="true">&rarr;</span></a></article>
+      <article class="offer-card" data-reveal><span class="offer-number">02</span><h3>Diligence Readout</h3><p class="offer-price">$3,500 &middot; five business days</p><p>A focused review of one important piece of AI assisted work before anyone relies on it. A review, not an implementation.</p><a href="/ai-work-review/">See the readout <span aria-hidden="true">&rarr;</span></a></article>
+      <article class="offer-card" data-reveal><span class="offer-number">03</span><h3>Workflow repair</h3><p class="offer-price">Diagnosis first, repair scoped separately</p><p>For AI work that loses context, breaks at a handoff, or still depends on senior people to rescue it.</p><a href="/ai-workflow-repair/">See workflow repair <span aria-hidden="true">&rarr;</span></a></article>
+    </div>
+    <p class="entry-note" data-reveal>Implementation partner? MSPs, AI consultants, and integrators can bring Good Remedy into client work they already lead. <a href="/partners/">How partners work with Good Remedy</a> &middot; <a href="/how-it-works/">See how a working example is built</a></p>
+  </div>
 </section>
 <section class="section capability-section" id="capabilities">
   <div class="shell capability-layout">
@@ -155,13 +170,16 @@
       <p>Bring one recurring operation, one real example, and the result the company needs. We will identify a practical first operating boundary and tell you whether Good Remedy is a fit.</p>
       <div class="contact-details"><a href="mailto:hello@grmove.com">hello@grmove.com</a><button class="copy-email" type="button" data-copy-email="hello@grmove.com">Copy email address</button><span class="copy-status" aria-live="polite" data-copy-status></span><a href="tel:+19175545582">(917) 554 5582</a></div>
     </div>
-    <form class="contact-form" id="operation-form" data-reveal>
-      <div class="field-row"><label><span>Name</span><input name="name" autocomplete="name" required></label><label><span>Work email</span><input name="email" type="email" autocomplete="email" required></label></div>
-      <label><span>Company</span><input name="company" autocomplete="organization"></label>
-      <label><span>What operation should work better?</span><input name="operation" placeholder="One recurring operation" required></label>
-      <label><span>What happens today?</span><textarea name="problem" placeholder="A few plain sentences are enough." required></textarea></label>
+    <form class="contact-form" id="operation-form" data-endpoint="" novalidate data-reveal>
+      <div class="field-row"><label><span>Name</span><input name="name" autocomplete="name" maxlength="120" required></label><label><span>Work email</span><input name="email" type="email" autocomplete="email" maxlength="200" required></label></div>
+      <div class="field-row"><label><span>Company</span><input name="company" autocomplete="organization" maxlength="160"></label><label><span>Which describes you?</span><select name="role"><option value="buyer">Buying for my organization</option><option value="partner">Implementation partner (MSP, consultant, integrator)</option><option value="other">Other</option></select></label></div>
+      <label><span>Where would you like to start?</span><select name="interest"><option value="unsure">Not sure yet</option><option value="pilot">Managed pilot</option><option value="readout">Diligence Readout</option><option value="repair">Workflow repair</option><option value="partnership">Partnership</option></select></label>
+      <label><span>What operation should work better?</span><input name="operation" placeholder="One recurring operation" maxlength="200" required></label>
+      <label><span>What happens today?</span><textarea name="problem" placeholder="A few plain sentences are enough. Leave out sensitive personal, health, or financial details." maxlength="4000" required></textarea></label>
+      <label class="hp-field" aria-hidden="true"><span>Leave this empty</span><input name="website" tabindex="-1" autocomplete="off"></label>
       <button class="button button-primary" type="submit">Start the conversation</button>
-      <p class="form-note">This opens an email to Good Remedy. Nothing is sent to a third party form service.</p>
+      <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+      <p class="form-note" data-form-note>This opens an email to Good Remedy. Nothing is sent to a third party form service.</p>
     </form>
   </div>
 </section>
@@ -169,7 +187,7 @@
 <footer class="site-footer">
   <div class="shell footer-grid">
     <div><a class="brand footer-brand" href="/"><img class="brand-mark" src="/assets/gr-logo.png" alt="" aria-hidden="true"><span class="brand-name">Good Remedy</span></a><p>The operating layer for business AI.</p></div>
-    <div class="footer-links"><a href="/platform/">Platform</a><a href="/transformation-implementation/">Pilot</a><a href="/ai-workflow-repair/">Workflow repair</a><a href="/ai-work-review/">Work review</a><a href="/about/">Company</a><a href="/privacy/">Privacy</a></div>
+    <div class="footer-links"><a href="/platform/">Platform</a><a href="/transformation-implementation/">Pilot</a><a href="/ai-workflow-repair/">Workflow repair</a><a href="/ai-work-review/">Work review</a><a href="/partners/">Partners</a><a href="/how-it-works/">How it works</a><a href="/about/">Company</a><a href="/privacy/">Privacy</a></div>
     <div class="footer-contact"><a href="mailto:hello@grmove.com">hello@grmove.com</a><a href="tel:+19175545582">(917) 554 5582</a><span>New Jersey, United States</span></div>
   </div>
   <div class="shell legal-row"><span>&copy; <span data-year></span> Good Remedy. All rights reserved.</span><span>Good Remedy does not provide legal, medical, regulatory, financial, or other professional approval.</span></div>
